@@ -5,10 +5,14 @@ import "../styles/components/Header.css"
 const Header = () => {
     return (
         <div className="Header">
-            <h1 className="Header-title">PlatziConf Merch</h1>
+            <h1 className="Header-title">
+                <Link to="/">
+                    PlatziConf Merch
+                </Link>
+            </h1>
             <div className="Header-checkout">
                 <Link to="/checkout">
-                    Checkout
+                    <i className="fas fa-shopping-basket" />
                 </Link>
             </div>
         </div>
